@@ -1,5 +1,7 @@
 # MamaPlus
 
+**(UNTESTED)** improvements and additions to mama-forever. Runs alongside mama-forever (https://github.com/mooreatv/MAMA-multiboxing/). Not yet run in game: see [TESTING.md](MamaPlus/TESTING.md).
+
 A companion addon for MooreaTV's [Mama-forever](https://github.com/mooreatv/MAMA-multiboxing) on
 World of Warcraft: Forever (Interface 16001). It needs Mama and hooks into it through
 `MamaForever`; Mama's own files are not changed, so Mama updates keep working.
