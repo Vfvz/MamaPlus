@@ -1,0 +1,24 @@
+<!--
+   MamaPlus key bindings. The client loads Bindings.xml from the addon folder
+   on its own (a full restart, not a /reload, picks up a new file): it must
+   NOT be listed in MamaPlus.toc. Defaults don't work
+   (https://github.com/Stanzilla/WoWUIBugs/issues/12), so there are none.
+   The key bindings UI shows _G[category] as the category name:
+   BINDING_HEADER_MAMAPLUS and the entry labels are set in Keys.lua.
+-->
+<Bindings>
+    <Binding name="CLICK MamaPlusTargetLead:LeftButton" category="BINDING_HEADER_MAMAPLUS">
+    </Binding>
+    <Binding name="CLICK MamaPlusTarget1:LeftButton" category="BINDING_HEADER_MAMAPLUS">
+    </Binding>
+    <Binding name="CLICK MamaPlusTarget2:LeftButton" category="BINDING_HEADER_MAMAPLUS">
+    </Binding>
+    <Binding name="CLICK MamaPlusTarget3:LeftButton" category="BINDING_HEADER_MAMAPLUS">
+    </Binding>
+    <Binding name="CLICK MamaPlusTarget4:LeftButton" category="BINDING_HEADER_MAMAPLUS">
+    </Binding>
+    <Binding name="CLICK MamaPlusTarget5:LeftButton" category="BINDING_HEADER_MAMAPLUS">
+    </Binding>
+    <Binding name="CLICK MamaPlusStopFollow:LeftButton" category="BINDING_HEADER_MAMAPLUS">
+    </Binding>
+</Bindings>

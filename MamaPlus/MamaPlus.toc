@@ -1,0 +1,22 @@
+## Interface: 16001
+## Title: MamaPlus
+## Notes: Companion to Mama-forever: status row icons, idle/stuck/death alerts, level/zone rows, supplies, find, extra keys.
+## Author: Vfvz
+## Version: 0.1.0
+## Dependencies: Mama
+## SavedVariables: MamaPlusDB
+
+Core.lua
+Alert.lua
+Rows.lua
+Status.lua
+Idle.lua
+Where.lua
+Follow.lua
+Death.lua
+DeathDesk.lua
+Supplies.lua
+Find.lua
+Keys.lua
+Options.lua
+Probe.lua

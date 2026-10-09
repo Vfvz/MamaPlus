@@ -1,0 +1,25 @@
+name: MamaPlus tests
+
+on:
+  push:
+    paths: ["MamaPlus/**", ".github/workflows/mamaplus.yml"]
+  pull_request:
+    paths: ["MamaPlus/**", ".github/workflows/mamaplus.yml"]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lua 5.1 and luacheck
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq lua5.1 lua-check
+      - name: Run tests and lint
+        run: sh MamaPlus/tests/run.sh
+      - name: Build the release zip
+        run: sh MamaPlus/tools/package.sh
+      - name: Upload the release zip
+        uses: actions/upload-artifact@v4
+        with:
+          name: mamaplus-zip
+          path: dist/*.zip
+          if-no-files-found: error
